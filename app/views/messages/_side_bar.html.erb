@@ -1,7 +1,9 @@
 <div class="chat-side">
   <div class="side-header">
     <div class="side-box">
-      <div class="side-header-user">Tom</div>
+      <div >
+        <%= link_to 'inari', edit_user_path(current_user) ,class: 'side-header-user' %>
+      </div>
       <div class="side-header-action">
         <%= link_to 'チャットを作成する', '#' ,class: 'side-header-link' %>
       </div>
