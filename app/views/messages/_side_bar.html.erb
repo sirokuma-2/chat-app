@@ -12,7 +12,7 @@
   <div class="chat-rooms">
     <% Room.all.each do |room| %>
       <div class="chat-room">
-        <%= link_to room.name, '#' ,class: 'chat-room-link' %>
+        <%= link_to room.name, room_messages_path(room) ,class: 'chat-room-link' %>
       </div>
     <% end %>
   
